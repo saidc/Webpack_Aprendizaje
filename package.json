@@ -1,0 +1,16 @@
+{
+  "name": "wp01",
+  "version": "1.0.0",
+  "description": "aprendiendo a usar webpack con el curso de platzi de webpack",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Hello world\" && exit 1 ",
+    "build": "webpack server.js --output bundle.js --node development"
+  },
+  "author": "Said Cortes Calderon",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
+}

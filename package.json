@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Hello world\" && exit 1 ",
-    "build": "webpack server.js --output bundle.js --node development"
+    "build": "webpack server.js --output bundle.js --node development",
+    "build:local": "webpack"
   },
   "author": "Said Cortes Calderon",
   "license": "ISC",

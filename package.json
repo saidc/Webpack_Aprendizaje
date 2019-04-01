@@ -4,21 +4,18 @@
   "description": "aprendiendo a usar webpack con el curso de platzi de webpack",
   "main": "./external/server.js",
   "scripts": {
-    "test": "echo \"Hello world\" && exit 1 ",
-    "build": "webpack server.js --output bundle.js --node development",
-    "build:local": "webpack",
-    "build:external": "webpack --config ./external/webpack.config.js",
-    "build:css-style-loader": "webpack --config ./css-style-loader/webpack.config.js",
-    "build:plugin-extract-text": "webpack --config ./plugin-extract-text/webpack.config.js"
+    "start:react": "webpack-dev-server --config ./react/webpack.config.js"
   },
   "author": "Said Cortes Calderon",
   "license": "ISC",
   "devDependencies": {
     "css-loader": "2.1.1",
-    "mini-css-extract-plugin": "^0.5.0",
+    "json-loader": "0.5.7",
+    "mini-css-extract-plugin": "0.5.0",
     "style-loader": "0.23.1",
     "webpack": "4.29.6",
-    "webpack-cli": "3.3.0"
+    "webpack-cli": "3.3.0",
+    "webpack-dev-server": "3.2.1"
   },
   "dependencies": {}
 }

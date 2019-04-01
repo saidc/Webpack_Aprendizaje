@@ -2,23 +2,34 @@
   "name": "wp01",
   "version": "1.0.0",
   "description": "aprendiendo a usar webpack con el curso de platzi de webpack",
-  "main": "./external/server.js",
+  "main": "/server.js",
   "scripts": {
     "test": "echo \"Hello world\" && exit 1 ",
     "build": "webpack server.js --output bundle.js --node development",
     "build:local": "webpack",
     "build:external": "webpack --config ./external/webpack.config.js",
     "build:css-style-loader": "webpack --config ./css-style-loader/webpack.config.js",
-    "build:plugin-extract-text": "webpack --config ./plugin-extract-text/webpack.config.js"
+    "build:plugin-extract-text": "webpack --config ./plugin-extract-text/webpack.config.js",
+    "build:react": "webpack --config ./react/webpack.config.js"
   },
   "author": "Said Cortes Calderon",
   "license": "ISC",
   "devDependencies": {
+    "@babel/preset-react": "7.0.0",
+    "babel-core": "6.26.3",
+    "babel-loader": "8.0.5",
+    "babel-preset-es2015": "6.24.1",
     "css-loader": "2.1.1",
-    "mini-css-extract-plugin": "^0.5.0",
+    "extract-text-webpack-plugin": "3.0.2",
+    "json-loader": "0.5.7",
+    "mini-css-extract-plugin": "0.5.0",
     "style-loader": "0.23.1",
-    "webpack": "4.29.6",
-    "webpack-cli": "3.3.0"
+    "url-loader": "1.1.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "react": "16.8.6",
+    "react-dom": "16.8.6"
+  }
 }

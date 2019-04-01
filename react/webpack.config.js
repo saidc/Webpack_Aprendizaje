@@ -5,20 +5,20 @@ module.exports = {
     output: {
         path: path.resolve(__dirname,'dist'),
         filename: 'js/bundle.js',
-        publicPath:"./dist/"
+        //publicPath:"./dist/"
+
     },
     devServer:{
-        port:3000
+        contentBase: path.join(__dirname, "dist"),
+        port:3000,
+        disableHostCheck: true,
     },
     module:{
         rules:[ // loaders
             {
                 test: /\.css$/,
+                exclude: /(node_modules)/,
                 use: [mini_css_extract_plugin.loader, "css-loader"]
-            },
-            {
-                test: /\.json$/,
-                loader: 'json-loader'
             }
         ]
     },

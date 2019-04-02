@@ -16,10 +16,22 @@ module.exports = {
     module:{
         rules:[ // loaders
             {
-                test: /\.css$/,
+                test: /\.js$/,
                 exclude: /(node_modules)/,
+                use: {
+                  loader: 'babel-loader',
+                  options: {
+                      presets: ['@babel/preset-env','@babel/react']
+                   // presets: [ 'react']
+                }
+                }
+            },
+            {
+                test: /\.css$/,
+                //exclude: /(node_modules)/,
                 use: [mini_css_extract_plugin.loader, "css-loader"]
             }
+            
         ]
     },
     plugins:[ //plugins
